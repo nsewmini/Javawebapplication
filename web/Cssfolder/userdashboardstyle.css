@@ -1,0 +1,450 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-Sep-2022, 13:07:50
+    Author     : Navod
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #afb1b3;
+}
+
+section{
+  padding:4rem 5%;
+}
+
+@keyframes fadeIn {
+  0%{
+     transform: scale(0);
+     opacity: 0;
+  }
+}
+
+
+
+.heading-title{
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color:var(--black);
+}
+.heading-title1{
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color:white;
+}
+.header{
+  position: sticky;
+  top:0; left:0; right:0;
+  z-index: 1000;
+  background-color: var(--white);
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 0rem;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: space-between;
+  height: 13vh;
+}
+
+.header .logo{
+  padding: 0px 0px;
+  margin-bottom: 5rem;
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.header .navbar a{
+  font-size: 2rem;
+  margin-left: 2rem;
+  color:var(--black);
+}
+
+.header .navbar a:hover{
+  color:var(--main-color);
+  text-decoration: none;
+}
+
+
+
+.signout-btn{
+  padding-right: 20px;
+  font-weight: bold;
+  background-color: #036dad;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 25px;
+}
+
+.signout-btn:hover{
+  background-color: #023d61;
+
+}
+
+
+
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  background-color: rgb(42, 102, 122);
+  }
+  
+  .sidebar div {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+  }
+ 
+
+
+/*-----------------------body part start here------------------------------------*/
+
+h1.heading-info01{
+  
+   font-weight: bold;
+   font-style: italic;
+   line-height: 0.5cm;
+  
+}
+
+h2.heading-info03{
+   font-size: 250%;
+   line-height: 0cm;
+   
+
+}
+
+.bar01{
+   font-family: "georgia", sans-serif;
+   font-size: medium;
+   max-width: 1100px;
+   min-height: 600px;
+   margin: 30px auto;
+   display: flex;
+   box-shadow: 2 7px 50px 0px rgba(63, 215, 134, 0.662);
+ }
+ 
+ .bar01.bar02{
+   width: 400px;
+   background-color: #8d94db;
+   color: rgb(223, 228, 127);
+   text-transform: uppercase;
+   text-align: center;
+
+ }
+ 
+ .bar01.bar02 .bar04{
+   padding: 24px 32px;
+   background: rgba(143, 185, 67, 0.674);
+   cursor: pointer;
+   font-weight: bold;
+   float:right;
+ }
+ 
+ .bar01 .bar02 .bar04.active {
+    background: #1ba2c7;
+    color: rgb(94, 202, 48);
+  }
+  
+  .bar01 .manageinfo {
+  width: 1500px;
+    background-image: url("./imagefolder/managebackground02.jpg");
+  }
+  
+ 
+  .bar01 .manageinfo .content {
+    display: none;
+    padding: 500px;
+  }
+  
+  .bar01 .manageinfo .content.active {
+    display: block;
+  }
+  
+  .bar01 .manageinfo h3 {
+    margin: 0;
+    font-size: 30px;
+    color:rgb(114, 12, 83);
+    text-shadow:  0 0 3px #e9aeae, 0 0 5px #4646f2;
+  }
+  
+  .bar01 .manageinfo p {
+    line-height: 2;
+    font-weight: bold;
+  }
+ 
+ /*----------------------------------------------------------------------*/
+ 
+ .container {
+    align-items: center;
+   max-width: 900px;
+   width: 150%;
+   background: var(--white);
+   border-radius: 10px;
+   box-shadow: 0 8px 24px rgba(228, 10, 170, 0.516);
+ }
+ .wrapper {
+   display: flex;
+ }
+ .indicator {
+   padding: 1.5rem 0;
+   border-right: 1px solid var(--grey);
+ }
+ .indicator li {
+   display: flex;
+   align-items: center;
+   grid-gap: .5rem;
+   padding: 10px 2rem;
+   cursor: pointer;
+   font-size: .875rem;
+   color: var(--black);
+   border-right: 3px solid transparent;
+ }
+ .indicator li i {
+   font-size: 1rem;
+ }
+ .indicator li:hover {
+   background: var(--light-blue);
+ }
+ .indicator li.active {
+   border-right-color: var(--blue);
+   color: var(--blue);
+   background: var(--light-blue);
+ }
+ .accountinfo {
+   padding: 1.5rem 2rem;
+ }
+ .accountinfo li {
+   display: none;
+ }
+ .accountinfo li.active {
+   display: block;
+ }
+ .accountinfo li h1 {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--black);
+   margin-bottom: .75rem;
+ }
+ .accountinfo li p {
+   margin-bottom: .5rem;
+   color: var(--dark-grey);
+   font-size: .875rem;
+ }
+ 
+ 
+ 
+ 
+ @media screen and (max-width: 576px) {
+   .wrapper {
+      flex-direction: column;
+   }
+   .indicator {
+      border-right: none;
+   }
+ }
+ 
+ /*---------------------------Manage Bookings Table------------------*/
+ 
+
+ .tableinfo {
+    border-collapse: collapse;
+    margin: 50px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tableinfo thead tr {
+    background-color: #111e6c9c;
+    color: #080808;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .tableinfo th,
+  .tableinfo td {
+    padding: 12px 15px;
+  }
+  
+  .tableinfo tbody tr {
+    border-bottom: 1px solid #09b77a;
+  }
+  
+  .tableinfo tbody tr:nth-of-type(even) {
+    background-color: #7893d5;
+  }
+  
+  .tableinfo tbody tr:last-of-type {
+    border-bottom: 1px solid #b27878;
+  }
+  
+  .tableinfo tbody tr.active-row {
+    font-weight: bold;
+    color: #e49090;
+  }
+ /*---------------------------Account Settings------------------------*/
+ .form-control:focus {
+    box-shadow: none;
+    background-color: #5ba3b5;
+  }
+  
+ 
+  .savechanges{
+    background: rgba(146, 139, 230, 0.778);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: rgb(27, 19, 19);
+    cursor: pointer;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+    text-transform: uppercase;
+ }
+ 
+  .profile-button {
+    background: #8785c9;
+    box-shadow: none;
+    border:black;
+  }
+  
+  .savechanges:hover {
+    background: #97c9e9;
+  }
+  
+  .profile-button:focus {
+    background: #a3bfd0;
+    box-shadow: none;
+  }
+  
+  .profile-button:active {
+    background: #7a99ad;
+    box-shadow: none;
+  }
+  
+ 
+ /*---------------------------Contact US----------------------------*/
+ .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(229, 20, 20, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(69, 109, 228, 0.543);
+  }
+  
+  .wrapper .title h1{
+    color: #9388da;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .forumofcontact{
+    display: flex;
+  }
+  
+  .inserts{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .inserts,
+  .textmessages{
+    width: 48%;
+  }
+  
+  .inserts .enterinfo,
+  .textmessages textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #14976f;
+    padding: 10px;
+    color: #1a95c9;
+    width: 100%;
+  }
+  
+  .textmessages textarea{
+    height: 200px;
+    width:400px;
+    background-color: #d3e646;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #492047;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #d09fcd;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #1f1f9b7d;
+  }
+  
+  .button{
+      background: rgba(134, 218, 8, 0.739);
+      text-align: center;
+      padding: 15px;
+      border-radius: 9px;
+      color: rgba(132, 27, 193, 0.213);
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 700px){
+    .forumofcontact{
+      flex-direction: column;
+    }
+    .textmessages {
+      float:bottom;
+    }
+    .textmessages textarea{
+      height: 100px;
+      color: rgb(185, 92, 167);
+
+    }
+    .input-fields,
+    .textmessages{
+      width: 100%;
+     
+    }
+  }
+ 
+ 
